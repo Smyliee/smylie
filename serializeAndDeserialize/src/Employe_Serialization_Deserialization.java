@@ -4,6 +4,7 @@ import java.util.Date;
 public class Employe_Serialization_Deserialization {
     public static  void main  (String[] args) throws IOException ,ClassNotFoundException{
         Date d1 = new Date();
+
         Employee e1 = new Employee("RAMAN" , 65 , 90000d ,d1);
         FileOutputStream foutstream = new FileOutputStream("abc.txt");
         ObjectOutputStream streamOut = new ObjectOutputStream(foutstream);

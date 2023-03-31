@@ -12,6 +12,7 @@ public class Car implements Serializable {
         this.model=model;
         this.year=year;
         this.owner=owner;
+
     }
 
     @Override
@@ -20,11 +21,11 @@ public class Car implements Serializable {
                 "maker='" + maker + '\'' +
                 ", model='" + model + '\'' +
                 ", year=" + year +
-                ", owner=" + owner +
+                ", owner=" + owner.name +owner.address +owner.age+
                 '}';
     }
 }
-   class Person  {
+   class Person implements Serializable {
     String name;
     int age;
     String address;
